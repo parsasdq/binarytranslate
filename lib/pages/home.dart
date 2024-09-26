@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'tashkhis.dart';
 import 'motarjem.dart';
-import 'package:binarytranslate/style/style.dart';
+import 'package:binarytranslate/style/textstyle.dart';
 
 
 
@@ -56,27 +56,27 @@ class _homepageState extends State<homepage> {
                     ),
                   ),
                   InkWell(onTap: (){},
-                    child: ListTile(title: Text('سایر برنامه ها',style: style.tabe_style),
+                    child: ListTile(title: Text('سایر برنامه ها',style: tabe_style),
                       leading: Icon(Icons.app_shortcut_sharp),
                     ),
                   ),
                   InkWell(onTap: (){},
-                    child: ListTile(title: Text('ثبت نظر',style: style.tabe_style,),
+                    child: ListTile(title: Text('ثبت نظر',style: tabe_style,),
                       leading: Icon(Icons.star_rate),
                     ),
                   ),
                   InkWell(onTap: (){},
-                    child: ListTile(title: Text('اشتراک گذاری',style: style.tabe_style,),
+                    child: ListTile(title: Text('اشتراک گذاری',style: tabe_style,),
                       leading: Icon(Icons.share),
                     ),
                   ),
                   InkWell(onTap: (){},
-                    child: ListTile(title: Text('خروج از برنامه',style: style.tabe_style,),
+                    child: ListTile(title: Text('خروج از برنامه',style: tabe_style,),
                       leading: Icon(Icons.exit_to_app),
                     ),
                   ),
                   InkWell(onTap: (){},
-                    child: ListTile(title: Text('درباره ما',style: style.tabe_style,),
+                    child: ListTile(title: Text('درباره ما',style: tabe_style,),
                       leading: Icon(Icons.info),
                     ),
                   ),

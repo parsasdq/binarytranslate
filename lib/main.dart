@@ -22,7 +22,7 @@ class _SplashScreenState extends State<SplashScreen> {
           title: Text('مترجم صوتی باینری',style: TextStyle(fontFamily: 'irani',),),
           showLoader: true,
           loaderColor: Colors.blue,
-          loadingText: Text('...درحال بارگیری اطلاعات',style: TextStyle(fontFamily: "irani"),),
+          loadingText: Text(' ...درحال بارگیری اطلاعات\n      version 1.1.2',style: TextStyle(fontFamily: "irani"),),
           durationInSeconds: 3,
           navigator:homepage(),
         ),

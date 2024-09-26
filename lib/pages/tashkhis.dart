@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:binarytranslate/api/translation_api.dart';
-import 'package:binarytranslate/style/style.dart';
+import 'package:binarytranslate/style/textstyle.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:google_ml_kit/google_ml_kit.dart';
 class tashkhis extends StatefulWidget {
@@ -25,7 +25,7 @@ class _tashkhisState extends State<tashkhis> {
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
           elevation: 20,
           margin: EdgeInsets.all(10),
-          child: Center(child: Text('.....تشخیص متن به زودی ',style: style.title_style )),
+          child: Center(child: Text('.....تشخیص متن به زودی ',style: title_style )),
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
         floatingActionButton: FloatingActionButton(onPressed: (){},shape: CircleBorder(),child: Icon(Icons.keyboard_voice,),),
