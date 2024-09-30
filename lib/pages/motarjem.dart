@@ -115,11 +115,18 @@ class motarjem extends StatelessWidget {
                           color: Colors.blue,
                         ),
                         onTap: () {
+                          lan1 = languagecode.getlanguagecode(
+                              languageController.DestinationLanguage.value);
+                          lan2 = languagecode.getlanguagecode(
+                              languageController.SourceLanguage.value);
                           var deslocal =
                               languageController.DestinationLanguage.value;
+                          var matnlocal = resultController.result.value;
                           languageController.DestinationLanguage.value =
                               languageController.SourceLanguage.value;
                           languageController.SourceLanguage.value = deslocal;
+                          resultController.result.value = matncontroller.text;
+                          matncontroller.text = matnlocal;
                         },
                       ),
                       Directionality(
@@ -297,7 +304,6 @@ class motarjem extends StatelessWidget {
                 onPressed: () {
                   listen();
                   if (islistening) {
-                    sTot.stop();
                     iconController.icon.value = Icons.mic_off;
                   }
                 },
@@ -340,6 +346,7 @@ void listen() async {
     () async {
       islistening = false;
       await sTot.stop();
+      SnackBar(content: Text('خطا در استفاده از میکروفون'));
     };
   }
 }
