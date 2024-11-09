@@ -1,6 +1,11 @@
-import 'package:get/get.dart';
+import 'package:flutter/material.dart';
+import '';
 
-class LanguageController extends GetxController {
-  var DestinationLanguage = 'فارسی'.obs;
-  var SourceLanguage = 'انگلیسی'.obs;
+class LanguageController {
+  String _DesLanguage = "fa";
+  String get getDesLanguage => _DesLanguage;
+  String _SrcLanguage = "en";
+  String get getSrcLanguage => _SrcLanguage;
+   
+  
 }

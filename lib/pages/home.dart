@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'tashkhis.dart';
 import 'motarjem.dart';
-import 'package:binarytranslate/style/textstyle.dart';
+import 'package:binarytranslate/style/style.dart';
 
 
 
